@@ -28,7 +28,7 @@ public class Product {
     private Double price;
 
     @Column(name = "stock", length = 20, nullable = false)
-    private Integer stock;
+    private int stock;
 
     @Column(name = "expiration_date", length = 20, nullable = false)
     private String expirationDate;
