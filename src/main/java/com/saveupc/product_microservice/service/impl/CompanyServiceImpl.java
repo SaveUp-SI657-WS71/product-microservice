@@ -14,7 +14,7 @@ public class CompanyServiceImpl {
     public CompanyDto getCompanyById(int companyId) {
         return webClientBuilder.build()
                 .get()
-                .uri("http://localhost:8080/api/saveup/v1/companies/" + companyId)
+                .uri("http://192.168.56.1:8082/api/saveup/v1/companies/" + companyId)
                 .retrieve()
                 .bodyToMono(CompanyDto.class)
                 .block();
